@@ -28,3 +28,6 @@ y_pred = clf.predict(X_test)
 
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test, y_pred)
+
+from sklearn.metrics import accuracy_score
+score = accuracy_score(y_test, y_pred)
