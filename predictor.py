@@ -17,8 +17,6 @@ X_train = scaler.transform(X_train)
 # apply same transformation to test data
 X_test = scaler.transform(X_test) 
 
-print(df.isnull().sum()) #dataset seems to have all values for every column every row
-
 from sklearn.neural_network import MLPClassifier
 clf = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(5, 2), random_state=1)
 
