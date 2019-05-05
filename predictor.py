@@ -18,7 +18,7 @@ X_train = scaler.transform(X_train)
 X_test = scaler.transform(X_test) 
 
 from sklearn.neural_network import MLPClassifier
-clf = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(5, 2), random_state=1)
+clf = MLPClassifier(solver='lbfgs', alpha=1e-5, hidden_layer_sizes=(10, 3), random_state=1)
 
 clf.fit(X_train, y_train)
 
